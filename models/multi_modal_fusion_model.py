@@ -337,9 +337,6 @@ class MMFM(ResNet):  # multi_modal_fusion_model
         T1 = fc1(T1)
         T2 = fc2(T2)
 
-        base_multi = int(1e3)
-        gt_label = gt_label % base_multi
-
         pcloss = self.pcloss(T1, T2, patient_id)
 
         tcloss = self.tcloss(T1, T2, gt_label)
