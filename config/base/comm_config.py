@@ -115,10 +115,10 @@ lr_config = dict(policy='CosineAnnealing',
 runner = dict(type='EpochBasedRunner', max_epochs=20)
 
 # evaluation
-evaluation = dict(interval=5)
+evaluation = dict(interval=20)
 
 # checkpoint
-checkpoint_config = dict(interval=1)
+checkpoint_config = dict(interval=20)
 
 eval_by_patient = True
 
