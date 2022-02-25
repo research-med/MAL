@@ -187,7 +187,7 @@ class SpineDataset(BaseDataset):
                  results,
                  patient_ids=None,
                  topk=300,
-                 thr=0.6,):
+                 thr=0.5,):
         """Evaluate the dataset.
         """
         from sklearn.metrics import (accuracy_score, confusion_matrix,
